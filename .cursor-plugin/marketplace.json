@@ -1,0 +1,36 @@
+{
+  "name": "typeshoot",
+  "owner": {
+    "name": "Typeshoot"
+  },
+  "metadata": {
+    "description": "Typeshoot creative tools: images, video, editing, voice, music and brand kits over MCP.",
+    "version": "0.1.1"
+  },
+  "plugins": [
+    {
+      "name": "typeshoot",
+      "source": "plugin",
+      "description": "Typeshoot creative studio: images, video, voice, music, face swaps and editing inside Claude, billed in Typeshoot credits.",
+      "version": "0.1.1",
+      "author": {
+        "name": "Typeshoot"
+      },
+      "homepage": "https://typeshoot.com",
+      "repository": "https://github.com/Tomolo997/typeshoot-marketplace",
+      "license": "MIT",
+      "keywords": [
+        "typeshoot",
+        "claude-code",
+        "mcp",
+        "image-generation",
+        "video",
+        "audio",
+        "brand"
+      ],
+      "logo": "./assets/typeshoot.png",
+      "skills": "./skills",
+      "mcpServers": "./.mcp.json"
+    }
+  ]
+}
