@@ -1,0 +1,17 @@
+{
+  "name": "typeshoot",
+  "owner": {
+    "name": "Typeshoot"
+  },
+  "plugins": [
+    {
+      "name": "typeshoot",
+      "source": "./plugin",
+      "description": "Images, video, voice, music, face swaps and editing inside Claude, billed in Typeshoot credits."
+    }
+  ],
+  "metadata": {
+    "description": "Typeshoot creative tools for images, video, editing, voice, music and brand kits in Claude Code.",
+    "version": "0.1.0"
+  }
+}
