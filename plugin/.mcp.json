@@ -2,7 +2,7 @@
   "mcpServers": {
     "typeshoot": {
       "type": "http",
-      "url": "${TYPESHOOT_MCP_URL:-https://typeshoot.com/mcp}"
+      "url": "https://typeshoot.com/mcp"
     }
   }
 }

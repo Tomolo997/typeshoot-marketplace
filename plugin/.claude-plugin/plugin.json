@@ -1,6 +1,6 @@
 {
   "name": "typeshoot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typeshoot creative studio: images, video, voice, music, face swaps and editing inside Claude, billed in Typeshoot credits.",
   "author": {
     "name": "Typeshoot",
@@ -17,5 +17,10 @@
   ],
   "homepage": "https://typeshoot.com",
   "repository": "https://github.com/Tomolo997/typeshoot-marketplace",
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "./assets/typeshoot.png",
+  "documentationUrl": "https://github.com/Tomolo997/typeshoot-marketplace#readme",
+  "supportUrl": "https://github.com/Tomolo997/typeshoot-marketplace/issues",
+  "privacyPolicyUrl": "https://typeshoot.com/privacy",
+  "termsOfServiceUrl": "https://typeshoot.com/terms"
 }

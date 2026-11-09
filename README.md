@@ -10,7 +10,7 @@ This marketplace bundles the Typeshoot remote MCP connector and seven skills for
 
 ## Install
 
-You need a current version of [Claude Code](https://code.claude.com/docs/en/overview), a Typeshoot account, and available Typeshoot credits for paid media tools.
+You need [Claude Code] version 2.1.281 or later(https://code.claude.com/docs/en/overview), a Typeshoot account, and available Typeshoot credits for paid media tools.
 
 Run these commands in your terminal:
 
@@ -51,6 +51,10 @@ Media generation uses Typeshoot credits. The skills ask Claude to estimate work 
 
 Skills load automatically when relevant. You can also invoke a focused skill, for example `/typeshoot:typeshoot-image`.
 
+## Data sent by the connector
+
+When you use a Typeshoot tool, the prompts, selected media and parameters needed for that request go to the hosted Typeshoot service. Generation requests are processed through fal.ai and the selected model provider. Results are returned to your assistant and Typeshoot library. The plugin has no local executable, install script or analytics hook. See the [Privacy Policy](https://typeshoot.com/privacy) for the service's published data-handling information.
+
 ## Update or uninstall
 
 Refresh the catalog, then update the plugin:
@@ -76,7 +80,7 @@ For account-side access management, review connected apps in your [Typeshoot das
 - **Plugin not found:** add the marketplace using the first install command, or refresh it with `claude plugin marketplace update typeshoot`, then retry installation.
 - **Installed but tools are missing:** restart Claude Code, open `/mcp`, and check that the plugin is enabled and its server is authenticated.
 - **Authentication required:** use the browser sign-in flow in `/mcp`. Do not paste passwords or API keys into a prompt.
-- **Cannot connect:** confirm that your network can reach `https://typeshoot.com`. If you previously set `TYPESHOOT_MCP_URL`, unset it to restore the production default; an empty value is not a fallback.
+- **Cannot connect:** confirm that your network can reach `https://typeshoot.com`.
 - **Insufficient credits:** check your balance and credit packs in the Typeshoot dashboard.
 
 Official references: [plugin commands](https://code.claude.com/docs/en/plugins/cli-reference), [MCP authentication and environment variables](https://code.claude.com/docs/en/mcp), and [plugin troubleshooting](https://code.claude.com/docs/en/plugins/troubleshooting).
@@ -96,7 +100,7 @@ LICENSE
 README.md
 ```
 
-The marketplace resolves its plugin from `./plugin`. Advanced/self-hosted users can set `TYPESHOOT_MCP_URL` to a complete MCP URL before launching Claude Code; ordinary users should leave it unset.
+The marketplace resolves its plugin from `./plugin` and connects to the fixed production endpoint `https://typeshoot.com/mcp`.
 
 ## Support and license
 
