@@ -10,7 +10,7 @@ This marketplace bundles the Typeshoot remote MCP connector and seven skills for
 
 ## Install
 
-You need [Claude Code] version 2.1.281 or later(https://code.claude.com/docs/en/overview), a Typeshoot account, and available Typeshoot credits for paid media tools.
+You need [Claude Code](https://code.claude.com/docs/en/overview) version 2.1.281 or later, a Typeshoot account, and available Typeshoot credits for paid media tools.
 
 Run these commands in your terminal:
 
